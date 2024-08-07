@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="shortcut icon" href="assets/druid-icon.png" type="image/x-icon">
+  <title>Text Decoder</title>
+</head>
+<body>
+  <main class="main container">
+    <header class="cabecalho">
+      <img src="assets/druid-icon.png" alt="druid icon">
+      <h1>Mensagens Codificadas</h1>
+    </header>
+    <div class="container-input">
+      <div class="input">
+        <textarea id="input-text" placeholder="Digite aqui..."></textarea>
+        <p>Apenas letras minusculas e sem acento</p>
+      </div>
+      <div id="output"> 
+        <img src="assets/bear.png" alt="bear">
+        <h2>Nenhuma mensagem encontrada</h2>
+        <span>Digite o texto que deseja criptografar ou descriptografar.</span>
+      </div>
+    </div>
+    <div class="buttons">
+      <div class="container-buttons">
+        <button onclick="encrypty()" class="button-encrypt">Criptografar</button>
+        <button onclick="decryptText()" class="button-decrypt">Descriptografar</button>
+      </div> 
+    </div>
+  </main>
+  <footer class="rodape">Desenvolvido por Nicolas Rodrigues</footer>
+  <script src="./scripts/app.js"></script>
+</body>
+</html>
